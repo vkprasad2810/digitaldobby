@@ -54,7 +54,7 @@ The **case study deck** (`case-studies.html`) is the deeper proof: 5 brands, eac
 2. **Hosting.** Drag the whole folder onto [app.netlify.com/drop](https://app.netlify.com/drop) (or Vercel / GitHub Pages / cPanel). `404.html` and `robots.txt` are already in place.
 3. **Domain.** Connect your domain (e.g. digitaldobby.in) in the host's settings.
 4. **Share image URL.** Once the domain is live, change `content="assets/og-image.png"` to the full address (e.g. `https://yourdomain/assets/og-image.png`) in both HTML files. Some apps only show previews for full addresses.
-5. **Google Search Console.** ✅ Done: `https://digitaldobby.com/` is verified (signed in as vkprasad2810@gmail.com) and `sitemap.xml` is submitted. **Don't delete `google7c6fb4da80c21fda.html`**: Search Console checks it to keep the site verified. Still to do: create a free Google Business Profile for local search.
+5. **Google Search Console.** ✅ Done: `https://digitaldobby.com/` is verified (signed in as vkprasad2810@gmail.com) and `sitemap.xml` is submitted. **Don't delete `google7c6fb4da80c21fda.html`**: Search Console checks it to keep the site verified.
 6. **Google Analytics.** ✅ Done: the Google tag `GTM-WK9DX77G` (GA4 property "Digital Dobby", measurement ID `G-26RMJXTR8T`) is at the top of every page. Each successful contact-form enquiry is recorded as a `generate_lead` event. Mark it as a key event in GA (Admin → Events) to count leads in reports.
 
 ## What clients look for, and where the site answers it
