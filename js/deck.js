@@ -96,28 +96,6 @@ const CASES = [
     art: `<path d="M200 230C120 180 90 120 120 70c25-40 70-30 80 10 10-40 55-50 80-10 30 50 0 110-80 160z"/><path d="M200 80v150M140 140c30 0 50 20 60 40M260 140c-30 0-50 20-60 40"/>`
   },
   {
-    id: 'vedic-rishi',
-    name: 'Vedic Rishi',
-    industry: 'Astrology tech platform',
-    tags: ['Brand positioning', 'SEO', 'Content', 'Social media', 'Google ads', 'Email'],
-    color: '#4B2E83', fg: '#FFFFFF',
-    timeline: '8 months',
-    objective: 'Boost sales and promote the brand',
-    challenge: 'Change the way people perceive astrology by merging it with tech. Vedic Rishi faced low brand awareness, limited engagement, weak search rankings and inconsistent conversions despite a comprehensive offering.',
-    approach: [
-      { t: '360° brand strategy', d: 'Brand positioning, SEO, content creation and social media engagement as one plan.' },
-      { t: 'Data-driven ad campaigns', d: 'Launched across Google and social platforms with an optimised sales funnel.' },
-      { t: 'Personalised email', d: 'Personalised email workflows that improved customer retention by 20%.' }
-    ],
-    results: [
-      { v: '+50%', l: 'Increase in website traffic' },
-      { v: '+32%', l: 'Higher conversion rates' },
-      { v: '+40%', l: 'Growth in social media engagement' }
-    ],
-    platforms: ['googleads', 'facebook', 'youtube', 'instagram', 'zapier', 'mailchimp'],
-    art: `<circle cx="200" cy="130" r="105"/><path d="M110 95l55 30 40-50 55 45 40-25"/><circle cx="110" cy="95" r="6"/><circle cx="165" cy="125" r="6"/><circle cx="205" cy="75" r="6"/><circle cx="260" cy="120" r="6"/><circle cx="300" cy="95" r="6"/><path d="M200 185l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/>`
-  },
-  {
     id: 'design-letters',
     name: 'Design Letters',
     industry: 'E-commerce · Jewellery (Shopify)',
@@ -193,20 +171,6 @@ const VIZ = {
       { v: '+25%', l: 'Ad conversion rate' },
       { v: '+20%', l: 'Email engagement' },
       { v: '−25%', l: 'Bounce rate' }
-    ] }
-  },
-  'vedic-rishi': {
-    compare: { note: 'Indexed: kick-off = 100', rows: [
-      { l: 'Website traffic', b: 100, a: 150, bl: '100', al: '150', tag: '+50%' },
-      { l: 'Social media engagement', b: 100, a: 140, bl: '100', al: '140', tag: '+40%' },
-      { l: 'Conversion rate', b: 100, a: 132, bl: '100', al: '132', tag: '+32%' },
-      { l: 'Customer retention', b: 100, a: 120, bl: '100', al: '120', tag: '+20%' }
-    ] },
-    side: { type: 'snapshot', title: 'Semrush snapshot after the project', items: [
-      { v: '39', l: 'Authority score' },
-      { v: '134.2K', l: 'Organic search traffic' },
-      { v: '328.5K', l: 'Paid search traffic' },
-      { v: '10.2K', l: 'Backlinks' }
     ] }
   },
   'design-letters': {

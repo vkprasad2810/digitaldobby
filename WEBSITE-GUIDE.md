@@ -7,7 +7,7 @@ Each section answers the next question a client has, in the order they ask it: *
 | # | Section | The client's question it answers |
 |---|---|---|
 | — | **Hero** | *Who are you?* One-line promise, the doodle girl climbing the growth stairs, three headline results and the **Start a project** button, which stays on the first screen even on small laptops. |
-| — | **Client strip** | *Are they legit?* ISKCON, Design Letters, Jollywell, Vedic Rishi, InterFace, Rioga Premium. |
+| — | **Client strip** | *Are they legit?* ISKCON, Design Letters, Jollywell, InterFace, Rioga Premium. |
 | — | **About** | *What do they believe?* The positioning statement (words light up on scroll) and four quick facts. |
 | 01 | **Services** + goal picker | *Can they solve my problem?* Visitors tap a goal ("Get more leads", "Rank on Google"…) and the matching services light up and move to the top. **Get a plan for this →** opens the form with those services already ticked. |
 | 02 | **Selected work** | *Show me proof.* Four results cards → the full case study deck. |
@@ -18,7 +18,7 @@ Each section answers the next question a client has, in the order they ask it: *
 | — | **All of it, in one swing** | The final recap before the form: a reel where Maya swings on a thread spool and each swing wipes to the next service, each in its own style. It ends on the logo and "Let's talk". To change the words, edit the `<ol class="sw-words">` list in `index.html`. |
 | — | **Contact** | *How do I start?* The form (sends to Monika's inbox), with a reply-time promise next to the button. |
 
-The **case study deck** (`case-studies.html`) is the deeper proof: 6 brands, each with the challenge, approach, results and an animated chart slide. Visitors can download it as a PDF.
+The **case study deck** (`case-studies.html`) is the deeper proof: 5 brands, each with the challenge, approach, results and an animated chart slide. Visitors can download it as a PDF.
 
 **How it works** (`how-it-works.html`, in the main menu) explains digital marketing to clients who are new to it. It's a scroll-driven story with three doodle characters: Maya (your strategist), Riya (a brand owner) and Arjun (her customer). Across 8 scenes the stage stays pinned and each scene plays as you scroll: the problem, strategy, awareness, search, website, conversion, loyalty and growth. Each scene's caption lists the services involved. A "funnel at a glance" summary and a call to action follow. To change a caption, edit the `<article class="hiw-cap">` blocks in that file.
 
