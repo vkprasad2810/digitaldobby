@@ -19,9 +19,8 @@ const head404 = readFileSync('404.html', 'utf8').split('<style>')[0]
 const page = (c, i) => {
   const url = `${BASE}/case-studies/${c.id}/`;
   const others = CASES.filter(o => o.id !== c.id);
-  const headline = c.results[0];
   const desc = `${c.name} case study: ${c.results.map(r => `${r.v} ${r.l.toLowerCase()}`).join(', ')}. How Digital Dobby did it.`.slice(0, 158);
-  return `${head404.replace('<head>\n', '<head>\n')}  <title>${esc(c.name)} case study: ${esc(headline.v)} ${esc(headline.l.toLowerCase())} — Digital Dobby</title>
+  return `${head404.replace('<head>\n', '<head>\n')}  <title>${esc(c.name)} case study — Digital Dobby</title>
   <meta name="description" content="${esc(desc)}" />
   <link rel="canonical" href="${url}" />
   <meta property="og:title" content="${esc(c.name)} case study — Digital Dobby" />

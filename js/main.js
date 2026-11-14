@@ -727,6 +727,13 @@ window.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false)
   });
 })();
 
+/* ---------- Free audit buttons: start the form with an audit request ---------- */
+$$('[data-audit]').forEach(btn => btn.addEventListener('click', () => {
+  const msg = $('.contact-form textarea[name="message"]');
+  if (msg && !msg.value.trim()) msg.value = "I'd like a free audit. My website / Instagram: ";
+  if (typeof window.gtag === 'function') window.gtag('event', 'audit_click');
+}));
+
 /* ---------- Contact form ---------- */
 (() => {
   const form = $('.contact-form');
