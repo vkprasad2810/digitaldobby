@@ -1,10 +1,17 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+  <!-- Google tag (Google Analytics) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WK9DX77G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Digital Dobby — Digital Marketing Agency in Mumbai</title>
-  <meta name="description" content="Digital Dobby is a Mumbai-based digital marketing agency. Strategy, performance marketing, SEO, social media, content and email — woven into one plan that turns marketing into measurable growth." />
+  <meta name="description" content="Digital Dobby is a Mumbai digital marketing agency: strategy, performance ads, SEO, social media, content and email, run as one plan for growth." />
   <meta property="og:title" content="Digital Dobby — Strategy. Performance. Content. Growth." />
   <meta property="og:description" content="Performance marketing, SEO, social media, content and digital strategy for B2B and B2C brands." />
   <link rel="canonical" href="https://digitaldobby.com/" />
@@ -24,17 +31,110 @@
   <link rel="stylesheet" href="css/style.css?v=30" />
   <link rel="stylesheet" href="css/ink.css?v=2" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Digital Dobby",
-    "description": "Digital marketing agency for B2B and B2C brands: digital strategy, performance marketing, SEO, social media, content and email.",
-    "email": "digital.dobbyy@gmail.com",
-    "sameAs": ["https://www.linkedin.com/company/digital-dobbyy/about/", "https://www.instagram.com/digital.dobbyy/"],
-    "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-    "founder": { "@type": "Person", "name": "Monika Saha" },
-    "knowsAbout": ["Performance marketing", "Search engine optimization", "Social media marketing", "Content marketing", "Email marketing", "Conversion rate optimization"]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://digitaldobby.com/#organization",
+      "name": "Digital Dobby",
+      "url": "https://digitaldobby.com/",
+      "logo": "https://digitaldobby.com/assets/logo.png",
+      "image": "https://digitaldobby.com/assets/og-image.png",
+      "description": "Digital marketing agency for B2B and B2C brands: digital strategy, performance marketing, SEO, social media, content and email.",
+      "email": "digital.dobbyy@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/digital-dobbyy/about/",
+        "https://www.instagram.com/digital.dobbyy/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Monika Saha"
+      },
+      "knowsAbout": [
+        "Performance marketing",
+        "Search engine optimization",
+        "Social media marketing",
+        "Content marketing",
+        "Email marketing",
+        "Conversion rate optimization"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://digitaldobby.com/#website",
+      "url": "https://digitaldobby.com/",
+      "name": "Digital Dobby",
+      "publisher": {
+        "@id": "https://digitaldobby.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://digitaldobby.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of businesses do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both B2B and B2C — across FMCG and food & beverage, technology and SaaS, real estate, e-commerce, healthcare & wellness, spirituality & tourism, ed-tech and entertainment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which channels do you manage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meta, Google, LinkedIn and YouTube ads, search engine marketing, SEO, social media, email, content and conversion optimisation — run as one connected plan rather than separate silos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every engagement starts with clear KPIs — leads, conversions, traffic, engagement and ROI — tracked in Google Analytics and your ad platforms, and reported regularly along with what we're testing next."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every engagement is scoped to your goals, channels and budget, so there's no one-size price list. Pick a monthly budget range in the form below and we'll come back with a tailored proposal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soon will we see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paid campaigns can start bringing in leads within weeks of launch — Rioga Premium generated 200+ leads in the first two months of its project launches. SEO compounds over months: organic traffic for Jollywell and Design Letters grew 45% over 8–11 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which tools and platforms do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Ads, Meta Ads Manager, Google Analytics, Search Console and Tag Manager, SEMrush, Ahrefs and Moz, HubSpot, Mailchimp and Brevo, Hootsuite, Hotjar, Shopify, WordPress, Figma, Canva and Zapier — whatever fits your stack."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -741,6 +841,6 @@
 
   <script src="js/icons.js?v=5"></script>
   <script src="js/ink.js?v=2"></script>
-  <script src="js/main.js?v=26"></script>
+  <script src="js/main.js?v=27"></script>
 </body>
 </html>

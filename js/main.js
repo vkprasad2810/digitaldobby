@@ -773,6 +773,8 @@ window.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false)
         });
         const json = await res.json().catch(() => ({}));
         if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || `HTTP ${res.status}`);
+        // count the enquiry as a lead in Google Analytics (no form contents are sent)
+        if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_name: 'contact' });
         showSuccess();
       } catch (err) {
         console.warn('Contact form not sent:', err.message);
