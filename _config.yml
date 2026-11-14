@@ -1,0 +1,8 @@
+# GitHub Pages settings.
+# The site is plain HTML, so nothing is built; this only keeps
+# internal files from being published at digitaldobby.com.
+exclude:
+  - WEBSITE-GUIDE.md
+  - setup/
+  - .claude/
+  - .gitignore
