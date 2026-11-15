@@ -793,3 +793,8 @@ body.loaded .fc-spark.faces .pop:nth-child(3) { transition-delay: calc(var(--cd,
 /* Animations in a part of the page that is off screen are paused (js/main.js
    adds .paused), so the browser isn't repainting things nobody can see. */
 .paused, .paused *, .paused *::before, .paused *::after { animation-play-state: paused !important; }
+
+/* ---------- Niche page links (Industries section) ---------- */
+.niche-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: -12px 0 32px; color: var(--muted); font-weight: 600; }
+.niche-links a { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; transition: border-color .2s, background .2s; }
+.niche-links a:hover { border-color: var(--ink); background: var(--paper-2); }
