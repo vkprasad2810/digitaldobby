@@ -4,5 +4,6 @@
 exclude:
   - WEBSITE-GUIDE.md
   - setup/
+  - marketing/
   - .claude/
   - .gitignore
