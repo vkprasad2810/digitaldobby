@@ -103,3 +103,14 @@ The enquiries sheet is also your sales pipeline. Both tabs have dropdowns, and s
 **Weekly habit (Monday, 15 minutes):** sort both tabs by Next action date, do anything that's due, and give every open lead a next action.
 
 If the pipeline columns ever need setting up again, run `setupPipeline` from the Apps Script editor. It only adds what's missing.
+
+## Generated pages (case studies and niche pages)
+
+These pages are built by small scripts, so edit the source and rebuild instead of editing the HTML directly:
+
+| Pages | Edit | Then run |
+|---|---|---|
+| `case-studies/<name>/` (one page per case study) | The `CASES` list in `js/deck.js` | `node setup/build-case-pages.mjs` |
+| `real-estate-digital-marketing/`, `shopify-seo-agency/`, `d2c-marketing-agency/` | The `NICHES` list at the top of `setup/build-niche-pages.mjs` | `node setup/build-niche-pages.mjs` |
+
+After adding a new page, add its address to `sitemap.xml`, push, then use **URL inspection → Request indexing** in Search Console.
