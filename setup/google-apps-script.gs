@@ -7,7 +7,7 @@
    NOTIFY_EMAIL. Hitting "Reply" on that email replies to the client.
    ========================================================================== */
 
-const NOTIFY_EMAIL = 'digital.dobbyy@gmail.com';
+const NOTIFY_EMAIL = 'monika@digitaldobby.com';
 const SHEET_NAME = 'Enquiries';
 const FIELDS = ['Name', 'Email', 'Company', 'Phone', 'Services', 'Budget', 'Message'];
 const MAX_LEN = 5000;

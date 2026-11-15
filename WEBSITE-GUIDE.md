@@ -66,9 +66,9 @@ The **case study deck** (`case-studies.html`) is the deeper proof: 5 brands, eac
 
 ## Contact form setup (Google Sheets + email)
 
-Every enquiry is saved as a row in a Google Sheet and emailed to `digital.dobbyy@gmail.com`. Pressing **Reply** on that email replies straight to the client. It's free, and a normal Gmail account can send about 100 of these emails a day.
+Every enquiry is saved as a row in a Google Sheet and emailed to `monika@digitaldobby.com`. Pressing **Reply** on that email replies straight to the client. It's free, and a normal Gmail account can send about 100 of these emails a day.
 
-Do this once, signed in as **digital.dobbyy@gmail.com**:
+Do this once, signed in as **vkprasad2810@gmail.com** (the account that owns the sheet and the script). On Google's permission screen, tick both boxes before clicking Continue:
 
 1. Go to [sheets.new](https://sheets.new) and name the sheet **Digital Dobby — Enquiries**.
 2. Open **Extensions → Apps Script**. Delete the sample code, paste in all of `setup/google-apps-script.gs`, and save.
