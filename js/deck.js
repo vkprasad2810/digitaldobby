@@ -4,7 +4,7 @@
    an overview (challenge, services, art) and an approach & results slide.
    ========================================================================== */
 
-const CONTACT_EMAIL = 'digital.dobbyy@gmail.com';
+const CONTACT_EMAIL = 'monika@digitaldobby.com';
 
 const CASES = [
   {

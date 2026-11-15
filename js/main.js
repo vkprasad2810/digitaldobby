@@ -6,7 +6,7 @@
 // which saves each one as a row in a Google Sheet and emails it to the inbox.
 // Paste the Web app URL (ends in /exec) below. Left empty, the form opens the
 // visitor's email app with the message filled in, addressed to CONTACT_EMAIL.
-const CONTACT_EMAIL = 'digital.dobbyy@gmail.com';
+const CONTACT_EMAIL = 'monika@digitaldobby.com';
 const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyBH8QXXEU2O8fpC_vzjQ2wtjT5-nWQIVKINAY1SCEyQKqgF5pixNVy6ZO5oSdOd_RVvw/exec';
 
 const $ = (s, el = document) => el.querySelector(s);
