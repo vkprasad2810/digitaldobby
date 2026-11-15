@@ -26,7 +26,8 @@ function doPost(e) {
     }
     const page = String(data.Page || '').slice(0, 500);
 
-    getSheet_().appendRow([new Date()].concat(FIELDS.map(k => safeCell_(clean[k])), safeCell_(page)));
+    // Received, the form fields, Page, then the pipeline's Stage and Source columns
+    getSheet_().appendRow([new Date()].concat(FIELDS.map(k => safeCell_(clean[k])), safeCell_(page), 'New', 'Website form'));
 
     const rows = FIELDS.filter(k => clean[k])
       .map(k => `<tr><td style="padding:6px 12px;color:#666;vertical-align:top"><b>${k}</b></td>` +
@@ -61,6 +62,62 @@ function doGet() {
 function setup() {
   getSheet_();
   Logger.log('Ready. Emails left today: ' + MailApp.getRemainingDailyQuota());
+}
+
+// Run once from the editor (▶ Run) to turn the sheet into a simple sales pipeline:
+// adds Stage / Source / Next action / Value / Notes columns with dropdowns to the
+// Enquiries tab, and creates an "Outreach" tab for prospects you contact yourself.
+// Safe to run again: it only sets up what is missing.
+const STAGES = ['New', 'Contacted', 'Call booked', 'Call done', 'Proposal sent', 'Negotiation', 'Won', 'Lost', 'Nurture'];
+const SOURCES = ['Website form', 'WhatsApp', 'LinkedIn', 'Instagram', 'Referral', 'Partner', 'Cold email', 'Other'];
+const OUTREACH_STAGES = ['To contact', 'Contacted', 'Replied', 'Audit sent', 'Call booked', 'Proposal sent', 'Won', 'Lost', 'Not interested', 'Do not contact'];
+const NICHES = ['Real estate', 'D2C / Shopify', 'SaaS / proptech', 'Spiritual / non-profit', 'Other'];
+
+function setupPipeline() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const list = values => SpreadsheetApp.newDataValidation().requireValueInList(values, true).setAllowInvalid(false).build();
+  const dates = SpreadsheetApp.newDataValidation().requireDate().setAllowInvalid(false).build();
+  const ROWS = 1000;
+
+  // Enquiries: pipeline columns go right after Page (column 9)
+  const enq = getSheet_();
+  const first = FIELDS.length + 3; // column 10
+  const extra = ['Stage', 'Source', 'Next action', 'Next action date', 'Value (₹/month)', 'Notes'];
+  if (enq.getRange(1, first).getValue() !== 'Stage') {
+    enq.getRange(1, first, 1, extra.length).setValues([extra]).setFontWeight('bold');
+    enq.getRange(2, first, ROWS, 1).setDataValidation(list(STAGES));
+    enq.getRange(2, first + 1, ROWS, 1).setDataValidation(list(SOURCES));
+    enq.getRange(2, first + 3, ROWS, 1).setDataValidation(dates).setNumberFormat('dd mmm yyyy');
+    enq.getRange(2, first + 4, ROWS, 1).setNumberFormat('₹#,##0');
+    colourStages_(enq, enq.getRange(2, first, ROWS, 1));
+  }
+
+  // Outreach: prospects found on LinkedIn, Instagram, RERA lists and so on
+  let out = ss.getSheetByName('Outreach');
+  if (!out) {
+    out = ss.insertSheet('Outreach');
+    const head = ['Date added', 'Name', 'Company', 'Role', 'Email / LinkedIn', 'Phone', 'Industry', 'Niche', 'Where found', 'Stage', 'Last contact', 'Next action', 'Next action date', 'Value (₹/month)', 'Notes'];
+    out.getRange(1, 1, 1, head.length).setValues([head]).setFontWeight('bold');
+    out.setFrozenRows(1);
+    out.getRange(2, 1, ROWS, 1).setDataValidation(dates).setNumberFormat('dd mmm yyyy');
+    out.getRange(2, 8, ROWS, 1).setDataValidation(list(NICHES));
+    out.getRange(2, 10, ROWS, 1).setDataValidation(list(OUTREACH_STAGES));
+    out.getRange(2, 11, ROWS, 1).setDataValidation(dates).setNumberFormat('dd mmm yyyy');
+    out.getRange(2, 13, ROWS, 1).setDataValidation(dates).setNumberFormat('dd mmm yyyy');
+    out.getRange(2, 14, ROWS, 1).setNumberFormat('₹#,##0');
+    colourStages_(out, out.getRange(2, 10, ROWS, 1));
+  }
+  Logger.log('Pipeline ready: Enquiries columns J–O and the Outreach tab.');
+}
+
+// Green for won, grey for lost or closed, orange for anything waiting on a reply or proposal
+function colourStages_(sheet, range) {
+  const rule = (text, bg) => SpreadsheetApp.newConditionalFormatRule().whenTextEqualTo(text).setBackground(bg).setRanges([range]).build();
+  const rules = sheet.getConditionalFormatRules()
+    .concat(['Won'].map(t => rule(t, '#D6F0DF')))
+    .concat(['Lost', 'Not interested', 'Do not contact'].map(t => rule(t, '#E6E3DE')))
+    .concat(['Proposal sent', 'Negotiation', 'Call booked', 'Audit sent'].map(t => rule(t, '#FCE3D6')));
+  sheet.setConditionalFormatRules(rules);
 }
 
 function getSheet_() {

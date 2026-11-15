@@ -84,3 +84,22 @@ Do this once, signed in as **vkprasad2810@gmail.com** (the account that owns the
 **If you change the script later**, use **Deploy → Manage deployments → ✏️ Edit → Version: New version → Deploy**. That keeps the same URL. Choosing *New deployment* instead creates a new URL, which you would have to paste into `main.js` again.
 
 Until `FORM_ENDPOINT` is filled in, the form opens the visitor's email app with their message already written, so no enquiry is lost.
+
+## Sales pipeline (the Google Sheet)
+
+The enquiries sheet is also your sales pipeline. Both tabs have dropdowns, and stages are colour-coded: orange for waiting on a call or proposal, green for won, grey for lost.
+
+**Enquiries tab** (website leads, filled in automatically):
+- Columns A–I come from the form. Don't edit or move them.
+- Columns J–O are yours: **Stage**, **Source**, **Next action**, **Next action date**, **Value (₹/month)** and **Notes**.
+- New website leads arrive as Stage = New, Source = Website form.
+- Stages: New → Contacted → Call booked → Call done → Proposal sent → Negotiation → Won / Lost / Nurture.
+
+**Outreach tab** (people you contact yourself, from LinkedIn, Instagram, RERA lists and so on):
+- Add one row per prospect: name, company, role, how to reach them, niche and where you found them.
+- Stages: To contact → Contacted → Replied → Audit sent → Call booked → Proposal sent → Won / Lost / Not interested / Do not contact.
+- Honour "Do not contact" every time.
+
+**Weekly habit (Monday, 15 minutes):** sort both tabs by Next action date, do anything that's due, and give every open lead a next action.
+
+If the pipeline columns ever need setting up again, run `setupPipeline` from the Apps Script editor. It only adds what's missing.
