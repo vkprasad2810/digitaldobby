@@ -734,6 +734,11 @@ $$('[data-audit]').forEach(btn => btn.addEventListener('click', () => {
   if (typeof window.gtag === 'function') window.gtag('event', 'audit_click');
 }));
 
+/* ---------- WhatsApp links: count clicks in Google Analytics ---------- */
+$$('[data-whatsapp]').forEach(a => a.addEventListener('click', () => {
+  if (typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', { link_location: a.classList.contains('chat-fab') ? 'floating_button' : 'contact_section' });
+}));
+
 /* ---------- Contact form ---------- */
 (() => {
   const form = $('.contact-form');

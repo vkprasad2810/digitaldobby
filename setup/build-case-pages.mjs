@@ -62,6 +62,9 @@ const page = (c, i) => {
     .cs-cta { background: var(--dark); color: var(--paper); border-radius: 28px; padding: clamp(32px, 6vw, 56px); display: grid; gap: 18px; justify-items: start; }
     .cs-cta h2 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -.03em; }
     .cs-cta p { color: rgba(244,239,230,.7); font-size: 18px; max-width: 560px; }
+    .cs-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .cs-wa { border: 1px solid rgba(244,239,230,.35); color: var(--paper); }
+    .cs-wa:hover { border-color: var(--paper); }
     .cs-more { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
     .cs-more a { text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-radius: 18px; padding: 20px; display: grid; gap: 6px; }
     .cs-more a:hover { border-color: var(--ink); }
@@ -114,7 +117,10 @@ ${c.approach.map(a => `            <li><b>${esc(a.t)}</b><span>${esc(a.d)}</span
         <section class="cs-cta">
           <h2>Want results like ${esc(c.name)}'s?</h2>
           <p>Tell us about your brand and goals. We'll reply within one business day with ideas for your situation.</p>
-          <a href="/#contact" class="btn btn-accent">Start a project <span class="arrow">→</span></a>
+          <div class="cs-actions">
+            <a href="/#contact" class="btn btn-accent">Start a project <span class="arrow">→</span></a>
+            <a href="https://wa.me/919819861621?text=${encodeURIComponent(`Hi Digital Dobby, I saw the ${c.name} case study and I'd like to grow my brand.`)}" class="btn cs-wa" target="_blank" rel="noopener" data-whatsapp>Chat on WhatsApp</a>
+          </div>
         </section>
 
         <section>
@@ -131,6 +137,13 @@ ${others.map(o => `            <a href="/case-studies/${o.id}/"><b>${esc(o.name)
       <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll('[data-whatsapp]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', { link_location: 'case_study' });
+      });
+    });
+  </script>
 </body>
 </html>
 `;
