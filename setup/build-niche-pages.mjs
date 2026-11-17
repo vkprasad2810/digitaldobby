@@ -10,6 +10,7 @@ const WA = '919819861621';
 const NICHES = [
   {
     slug: 'real-estate-digital-marketing',
+    guide: { href: '/blog/real-estate-digital-marketing-cost-india/', label: 'Guide: what a real-estate launch campaign costs' },
     nav: 'Real estate',
     title: 'Real Estate Digital Marketing Agency in India — Digital Dobby',
     description: 'Launch campaigns, lead ads and fast landing pages for real-estate developers and brokers. 200+ leads in 2 months for Rioga Premium.',
@@ -49,6 +50,7 @@ const NICHES = [
   },
   {
     slug: 'shopify-seo-agency',
+    guide: { href: '/blog/shopify-seo-checklist-india/', label: 'Guide: Shopify SEO checklist for Indian stores' },
     nav: 'Shopify SEO',
     title: 'Shopify SEO and Google Ads Agency in India — Digital Dobby',
     description: 'Shopify SEO, site speed and Google Ads for Indian stores. Organic traffic +45% and conversions +20% for Design Letters, a Shopify jewellery brand.',
@@ -281,14 +283,14 @@ ${n.faq.map(f => `            <details><summary>${esc(f.q)}</summary><p>${esc(f.
           <div class="np-other">
 ${others.map(o => `            <a href="/${o.slug}/">${esc(o.nav)}</a>`).join('\n')}
             <a href="/case-studies.html">All case studies</a>
-          </div>
+${n.guide ? `            <a href="${n.guide.href}">${esc(n.guide.label)}</a>\n` : ''}          </div>
         </section>
       </div>
     </main>
 
     <footer class="np-foot">
       <span>© ${new Date().getFullYear()} Digital Dobby · Mumbai, India</span>
-      <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+      <span><a href="/blog/">Blog</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
     </footer>
   </div>
   <script>
