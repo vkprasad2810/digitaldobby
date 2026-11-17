@@ -134,7 +134,7 @@ ${others.map(o => `            <a href="/case-studies/${o.id}/"><b>${esc(o.name)
 
     <footer class="cs-foot">
       <span>© ${new Date().getFullYear()} Digital Dobby</span>
-      <span><a href="/blog/">Blog</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+      <span><a href="/blog/">Blog</a> · <a href="/partners/">Partners</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
     </footer>
   </div>
   <script>

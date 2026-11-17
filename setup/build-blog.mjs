@@ -457,7 +457,7 @@ ${main}
     </main>
     <footer class="bp-foot">
       <span>© ${new Date().getFullYear()} Digital Dobby · Mumbai, India</span>
-      <span><a href="/blog/">Blog</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+      <span><a href="/blog/">Blog</a> · <a href="/partners/">Partners</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
     </footer>
   </div>
 </body>
