@@ -8,6 +8,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   </script>
+  <!-- Microsoft Clarity (heatmaps and visit recordings), loaded after the page so it doesn't slow it down -->
+  <script>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      l.addEventListener('load',function(){setTimeout(function(){
+        t=l.document.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.document.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      },1500);});
+    })(window,window,"clarity","script","zev7lcyrom");
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Digital Dobby</title>
@@ -35,13 +45,14 @@
   <main class="legal">
     <a href="/" class="home">← Digital Dobby</a>
     <h1>Privacy policy</h1>
-    <p class="updated">Last updated: 15 November 2026</p>
+    <p class="updated">Last updated: 17 November 2026</p>
     <p>Digital Dobby ("we", "us") is a digital marketing agency based in Mumbai, India. This policy explains what information we collect through digitaldobby.com, why we collect it and what rights you have. We keep it short and plain.</p>
 
     <h2>What we collect</h2>
     <ul>
       <li><b>What you send through our contact form:</b> your name, email, company, phone or WhatsApp number, the services you're interested in, your budget range, your message and the page you sent it from.</li>
       <li><b>Website usage data:</b> we use Google Analytics to understand how visitors use the site (pages viewed, scrolling, clicks, approximate location, device and browser). It uses cookies. We don't use it to identify you personally.</li>
+      <li><b>Heatmaps and visit recordings:</b> we use Microsoft Clarity to see how visitors move through pages (clicks, scrolling, mouse movement) so we can improve the site. Text you type into forms is masked and not recorded. It uses cookies.</li>
     </ul>
 
     <h2>Why we use it</h2>
@@ -54,7 +65,7 @@
     <h2>Where it's stored and who processes it</h2>
     <ul>
       <li>Form enquiries are saved in a Google Sheet and sent to our Gmail inbox (Google LLC).</li>
-      <li>Website analytics are processed by Google Analytics (Google LLC).</li>
+      <li>Website analytics are processed by Google Analytics (Google LLC) and Microsoft Clarity (Microsoft Corporation).</li>
       <li>The website is hosted by GitHub Pages (GitHub, Inc.), which may log technical data such as IP addresses for security.</li>
     </ul>
     <p>These providers may store data on servers outside India.</p>
@@ -64,7 +75,7 @@
 
     <h2>Your rights</h2>
     <p>You can ask us to show you the personal data we hold about you, correct it, delete it or stop using it. You can also withdraw any consent you gave and nominate someone to act for you. To do any of this, email <a href="mailto:monika@digitaldobby.com">monika@digitaldobby.com</a>. We'll reply within 30 days.</p>
-    <p>You can block analytics cookies in your browser settings or with Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out add-on</a>.</p>
+    <p>You can block analytics cookies in your browser settings or with Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out add-on</a>. You can read how Microsoft handles Clarity data in the <a href="https://privacy.microsoft.com/privacystatement" rel="noopener">Microsoft Privacy Statement</a>.</p>
 
     <h2>Complaints</h2>
     <p>If you have a concern about how we handle your data, email us first at <a href="mailto:monika@digitaldobby.com">monika@digitaldobby.com</a> and we'll try to resolve it. If you're not satisfied, you can complain to the Data Protection Board of India.</p>

@@ -8,6 +8,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   </script>
+  <!-- Microsoft Clarity (heatmaps and visit recordings), loaded after the page so it doesn't slow it down -->
+  <script>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      l.addEventListener('load',function(){setTimeout(function(){
+        t=l.document.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.document.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      },1500);});
+    })(window,window,"clarity","script","zev7lcyrom");
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>How Digital Marketing Works — Digital Dobby</title>
