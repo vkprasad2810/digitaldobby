@@ -7,3 +7,6 @@
 
 # Personal Claude Code settings (launch.json is shared and kept)
 .claude/settings.local.json
+
+# Private business material (sales kit, prices, content plans). Kept on this Mac only.
+marketing/
