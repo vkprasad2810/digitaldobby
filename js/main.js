@@ -18,14 +18,8 @@ document.documentElement.classList.remove('no-js');
 
 /* ---------- Loader ---------- */
 (() => {
-  const start = performance.now();
-  const minTime = reduceMotion ? 0 : 900;
-  const done = () => {
-    const wait = Math.max(0, minTime - (performance.now() - start));
-    setTimeout(() => document.body.classList.add('loaded'), wait);
-  };
-  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
-  Promise.race([fonts, new Promise(r => setTimeout(r, 2000))]).then(done);
+  // short brand intro; it no longer waits for web fonts (they swap in on their own)
+  setTimeout(() => document.body.classList.add('loaded'), reduceMotion ? 0 : 600);
 })();
 
 $('.year').textContent = new Date().getFullYear();
@@ -420,7 +414,7 @@ const thread = (() => {
     line.style.strokeDasharray = L;
 
     // lookup table: path length -> point (the path only ever moves down the page)
-    const N = 1200;
+    const N = 400;
     xs = new Float32Array(N + 1);
     ys = new Float32Array(N + 1);
     for (let k = 0; k <= N; k++) {
@@ -597,17 +591,20 @@ window.addEventListener('scroll', requestFrame, { passive: true });
 
 let resizeT;
 const rebuild = () => { thread.build(); requestFrame(); };
-window.addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(rebuild, 150); });
-window.addEventListener('load', rebuild);
-if (document.fonts) document.fonts.ready.then(rebuild);
+// every trigger goes through one timer, so the thread is laid out once, not 4 times at start-up
+const scheduleRebuild = (ms = 150) => { clearTimeout(resizeT); resizeT = setTimeout(rebuild, ms); };
+window.addEventListener('resize', () => scheduleRebuild());
+window.addEventListener('load', () => scheduleRebuild(50));
+if (document.fonts) document.fonts.ready.then(() => scheduleRebuild());
 if ('ResizeObserver' in window) {
   let lastH = 0;
   new ResizeObserver(() => {
     const h = $('.page').scrollHeight;
-    if (Math.abs(h - lastH) > 4) { lastH = h; clearTimeout(resizeT); resizeT = setTimeout(rebuild, 120); }
+    if (Math.abs(h - lastH) > 4) { lastH = h; scheduleRebuild(120); }
   }).observe($('main'));
 }
-rebuild();
+scheduleRebuild(700);
+requestFrame();
 
 /* ---------- Pause looping animations that are off screen ---------- */
 const pauseIO = new IntersectionObserver(entries => {

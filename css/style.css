@@ -139,16 +139,16 @@ p { margin: 0; }
   position: fixed; inset: 0; z-index: 200;
   background: var(--ink); color: var(--paper);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
-  transition: transform .9s var(--ease) .1s;
-  animation: loader-failsafe 0s 4s forwards;
+  transition: transform .6s var(--ease);
+  animation: loader-failsafe 0s 2.5s forwards;
 }
 /* Brand lockup (loader + end of the swing reel): the two halves slide together, then the name fades in */
 .brand-lockup { display: block; height: auto; fill: currentColor; overflow: visible; }
 .brand-lockup text { font-family: var(--font-body); font-size: 23px; font-weight: 600; letter-spacing: 7px; }
 .loader-lockup { width: min(250px, 62vw); }
-.loader-lockup .dd-l { animation: dd-in-l .9s var(--ease) both; }
-.loader-lockup .dd-r { animation: dd-in-r .9s var(--ease) both; }
-.loader-lockup text { animation: fade-in .6s var(--ease) .45s both; }
+.loader-lockup .dd-l { animation: dd-in-l .55s var(--ease) both; }
+.loader-lockup .dd-r { animation: dd-in-r .55s var(--ease) both; }
+.loader-lockup text { animation: fade-in .4s var(--ease) .25s both; }
 @keyframes dd-in-l { from { opacity: 0; transform: translateX(-46px); } }
 @keyframes dd-in-r { from { opacity: 0; transform: translateX(46px); } }
 @keyframes fade-in { from { opacity: 0; } }
