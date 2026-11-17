@@ -25,9 +25,12 @@ function doPost(e) {
       return json_({ success: false, message: 'Please fill in your name, a valid email and a message.' });
     }
     const page = String(data.Page || '').slice(0, 500);
+    // the partners page sends Source: 'Partner'; anything not in the list counts as the website form
+    const source = SOURCES.indexOf(data.Source) > -1 ? data.Source : 'Website form';
+    const isReferral = source === 'Partner';
 
     // Received, the form fields, Page, then the pipeline's Stage and Source columns
-    getSheet_().appendRow([new Date()].concat(FIELDS.map(k => safeCell_(clean[k])), safeCell_(page), 'New', 'Website form'));
+    getSheet_().appendRow([new Date()].concat(FIELDS.map(k => safeCell_(clean[k])), safeCell_(page), 'New', source));
 
     const rows = FIELDS.filter(k => clean[k])
       .map(k => `<tr><td style="padding:6px 12px;color:#666;vertical-align:top"><b>${k}</b></td>` +
@@ -37,8 +40,9 @@ function doPost(e) {
       to: NOTIFY_EMAIL,
       replyTo: clean.Email,
       name: 'Digital Dobby website',
-      subject: `New enquiry from ${clean.Name} — Digital Dobby website`,
-      htmlBody: `<p>New enquiry from the website contact form:</p>` +
+      subject: isReferral ? `New partner referral from ${clean.Name} — ${clean.Company.replace(/^Referral: /, '')}`
+                          : `New enquiry from ${clean.Name} — Digital Dobby website`,
+      htmlBody: `<p>${isReferral ? 'New referral from the partners page. Reply to thank the partner; contact the business separately.' : 'New enquiry from the website contact form:'}</p>` +
                 `<table style="border-collapse:collapse;font-family:sans-serif;font-size:14px">${rows}</table>` +
                 `<p style="color:#888;font-size:12px">Sent from ${escape_(page)}. All enquiries are also saved in the Google Sheet.</p>`,
       body: FIELDS.filter(k => clean[k]).map(k => `${k}: ${clean[k]}`).join('\n')
