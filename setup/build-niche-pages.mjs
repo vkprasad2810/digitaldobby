@@ -1,4 +1,5 @@
-// Builds the niche landing pages (real estate, Shopify SEO, D2C) as plain HTML,
+// Builds the niche landing pages (real estate, Shopify SEO, D2C) and the service
+// pages (SEO, ads, social media, email) as plain HTML,
 // so each can rank on Google for its own searches and be shared in outreach.
 // Edit the NICHES list below, then run from the project folder:
 //   node setup/build-niche-pages.mjs
@@ -128,6 +129,177 @@ const NICHES = [
       { q: 'Should we start with ads or SEO?', a: 'Usually both, weighted differently. Ads bring sales now while SEO and email build up over months. We’ll recommend a split based on your margins and goals.' },
       { q: 'Do you work with brands on Shopify?', a: 'Yes, most D2C brands we work with run on Shopify. See our Shopify SEO page for what we do there.' }
     ]
+  },
+
+  // ---------- Service pages (one per main service, aimed at "<service> agency Mumbai" searches) ----------
+  {
+    slug: 'seo-services-mumbai',
+    serviceType: 'Search engine optimisation',
+    guide: { href: '/blog/shopify-seo-checklist-india/', label: 'Guide: Shopify SEO checklist' },
+    nav: 'SEO services',
+    title: 'SEO Services in Mumbai — SEO Agency | Digital Dobby',
+    description: 'Technical, on-page and off-page SEO for Mumbai and Indian brands. Organic traffic up 45% for Jollywell and Design Letters. Free SEO audit.',
+    eyebrow: 'SEO · Technical · On-page · Off-page',
+    h1: 'SEO that keeps bringing customers <em>after the ads stop.</em>',
+    lead: 'Paid ads stop the day the budget does. Search rankings keep working. We fix what holds your site back on Google, then build the pages and links that bring in people ready to buy.',
+    whatsapp: "Hi Digital Dobby, I'd like help with SEO for my website.",
+    pains: [
+      'Your website doesn’t show up when customers search for what you sell',
+      'Competitors with worse products rank above you',
+      'An SEO agency that sent reports full of jargon and no extra enquiries',
+      'A slow, hard-to-crawl site that Google rarely revisits'
+    ],
+    services: [
+      { t: 'Technical SEO', d: 'Fixing indexing, crawl errors, duplicate pages, structured data and site speed, so Google can read every page you care about.' },
+      { t: 'Keyword research', d: 'Finding the searches your buyers actually type, including the local and long-tail terms competitors ignore.' },
+      { t: 'On-page SEO', d: 'Titles, descriptions, headings, internal links and page copy rewritten around those searches.' },
+      { t: 'Content that ranks', d: 'Service pages, guides and blog posts written to answer real questions and bring in enquiries.' },
+      { t: 'Off-page SEO', d: 'Earning relevant links, listings and mentions that build your site’s authority.' },
+      { t: 'Local SEO', d: 'Location pages and local signals for searches like “near me” and “in Mumbai”.' }
+    ],
+    proof: [
+      { id: 'jollywell', name: 'Jollywell', kind: 'Wellness D2C', stats: [['+45%', 'organic traffic'], ['−25%', 'bounce rate'], ['+25%', 'ad conversion rates']] },
+      { id: 'design-letters', name: 'Design Letters', kind: 'Shopify jewellery store', stats: [['+45%', 'organic traffic'], ['+20%', 'conversion rate'], ['+30%', 'ad performance']] },
+      { id: 'rioga-premium', name: 'Rioga Premium', kind: 'Real estate consultancy', stats: [['+40%', 'website traffic'], ['+50%', 'better site score'], ['200+', 'leads in 2 months for most launches']] }
+    ],
+    steps: [
+      { t: 'SEO audit', d: 'We crawl your site, check Search Console and Analytics, and list what’s blocking rankings, in priority order.' },
+      { t: 'Fix the foundations', d: 'Technical and speed fixes first, because they lift every page at once.' },
+      { t: 'Build pages that rank', d: 'On-page work and new content for the searches that bring buyers, plus links that build authority.' },
+      { t: 'Monthly report', d: 'Rankings, organic traffic, enquiries from search and what we’re doing next, in plain language.' }
+    ],
+    faq: [
+      { q: 'How much do SEO services cost in Mumbai?', a: 'Our SEO plans start from ₹30,000 a month. The price depends on the size of the site and how competitive your searches are. A free audit will show what your site needs first.' },
+      { q: 'How long does SEO take to show results?', a: 'Technical fixes can show results within weeks. Rankings for competitive searches usually build over three to six months. For Jollywell and Design Letters, organic traffic grew 45% over eight to eleven months.' },
+      { q: 'Do you guarantee first-page rankings?', a: 'No honest agency can, because Google decides rankings. We commit to clear targets, steady work and monthly reporting on rankings, traffic and enquiries.' },
+      { q: 'Do you work only with Mumbai businesses?', a: 'No. We’re based in Mumbai and work with brands across India. Everything is done online, so location doesn’t matter.' }
+    ]
+  },
+  {
+    slug: 'performance-marketing-agency-mumbai',
+    serviceType: 'Performance marketing',
+    guide: { href: '/blog/real-estate-lead-generation-india/', label: 'Guide: real-estate lead generation' },
+    nav: 'Google & Meta ads',
+    title: 'Performance Marketing Agency in Mumbai — Google & Meta Ads',
+    description: 'Google Ads, Meta, LinkedIn and YouTube campaigns, A/B tested for leads and sales. Ad conversions up 40% for InterFace. Free ads audit.',
+    eyebrow: 'Performance marketing · Google · Meta · LinkedIn',
+    h1: 'Ads that pay for themselves, <em>not just clicks.</em>',
+    lead: 'We run Google, Meta, LinkedIn and YouTube campaigns tied to the numbers you care about: leads, sales and cost per customer. Every week we test, cut what doesn’t work and put more behind what does.',
+    whatsapp: "Hi Digital Dobby, I'd like help with Google and Meta ads.",
+    pains: [
+      'Ad spend going up while leads or sales stay flat',
+      'Lots of clicks, few enquiries, and no idea which ads actually work',
+      'Leads that never answer the phone',
+      'Campaigns set up once and never tested or improved'
+    ],
+    services: [
+      { t: 'Google Ads', d: 'Search, Performance Max, Shopping and YouTube campaigns built around buyer searches and profitable products.' },
+      { t: 'Meta ads', d: 'Facebook and Instagram lead and sales campaigns with fresh creatives and audiences tested every week.' },
+      { t: 'LinkedIn ads', d: 'B2B campaigns aimed at the job titles and companies you sell to.' },
+      { t: 'Landing pages', d: 'Fast, focused pages with one clear action, so more clicks turn into enquiries.' },
+      { t: 'Tracking that works', d: 'Conversion tracking, Analytics and lead sources set up properly, so every rupee can be traced.' },
+      { t: 'A/B testing', d: 'Creatives, headlines, audiences and offers tested side by side, and budget moved to the winners.' }
+    ],
+    proof: [
+      { id: 'interface', name: 'InterFace', kind: 'Real-estate SaaS', stats: [['+40%', 'ad conversions'], ['+30%', 'website engagement and lead capture'], ['+25%', 'email open rates']] },
+      { id: 'design-letters', name: 'Design Letters', kind: 'Shopify jewellery store', stats: [['+30%', 'ad performance'], ['+20%', 'conversion rate'], ['+45%', 'organic traffic']] },
+      { id: 'rioga-premium', name: 'Rioga Premium', kind: 'Real estate consultancy', stats: [['200+', 'leads in 2 months for most launches'], ['+40%', 'website traffic'], ['+50%', 'better site score']] }
+    ],
+    steps: [
+      { t: 'Ads audit', d: 'We review your accounts, tracking and landing pages, and show where budget is being wasted.' },
+      { t: 'Set up to measure', d: 'Conversion tracking and clear targets for cost per lead or return on ad spend, before we spend more.' },
+      { t: 'Launch and test', d: 'New campaigns and creatives go live, with weekly tests and budget moved to what works.' },
+      { t: 'Monthly report', d: 'Spend, leads or sales, cost per result and what we’re changing next.' }
+    ],
+    faq: [
+      { q: 'How much does a performance marketing agency charge?', a: 'Our plans start from ₹30,000 a month for managing one ad channel. Ad spend is separate and paid directly to Google, Meta or LinkedIn, so you always own the accounts.' },
+      { q: 'What ad budget do I need?', a: 'It depends on your goals and industry. Many brands start between ₹30,000 and ₹1,00,000 a month in ad spend and scale up what works. We’ll suggest a realistic budget after the audit.' },
+      { q: 'How soon will I see results from ads?', a: 'Campaigns can bring leads within days of launch. Expect the first four to six weeks to be about testing, with cost per lead usually improving after that.' },
+      { q: 'Who owns the ad accounts?', a: 'You do. We work inside your Google and Meta accounts with partner access, so all data and history stays with you.' }
+    ]
+  },
+  {
+    slug: 'social-media-marketing-agency-mumbai',
+    serviceType: 'Social media marketing',
+    guide: { href: '/blog/how-to-choose-digital-marketing-agency-india/', label: 'Guide: how to choose a marketing agency' },
+    nav: 'Social media',
+    title: 'Social Media Marketing Agency in Mumbai — Digital Dobby',
+    description: 'Instagram and LinkedIn content, community and influencer campaigns. 200K new Instagram followers in 8 months for ISKCON. Free social audit.',
+    eyebrow: 'Social media · Instagram · LinkedIn · Influencers',
+    h1: 'Social media people <em>actually stop for.</em>',
+    lead: 'Posting every day isn’t a strategy. We plan content around what your audience cares about, build a community that engages, and work with creators who bring the right followers.',
+    whatsapp: "Hi Digital Dobby, I'd like help with social media marketing.",
+    pains: [
+      'Posting regularly but followers and engagement aren’t growing',
+      'Content that looks like everyone else’s',
+      'No link between social media and actual enquiries or sales',
+      'Influencer posts that got likes but no customers'
+    ],
+    services: [
+      { t: 'Content strategy', d: 'Content themes, formats and a monthly calendar built around your audience and goals.' },
+      { t: 'Content creation', d: 'Reels, carousels, posts and captions with a clear point of view and a consistent look.' },
+      { t: 'Community management', d: 'Replying to comments and messages, and turning conversations into enquiries.' },
+      { t: 'Influencer marketing', d: 'Finding creators whose audience matches yours, and campaigns measured on results, not just reach.' },
+      { t: 'LinkedIn for founders', d: 'Thought-leadership content for founders and B2B brands that builds trust with buyers.' },
+      { t: 'Paid social', d: 'Boosting the posts that work and running Meta ads to reach new audiences.' }
+    ],
+    proof: [
+      { id: 'iskcon', name: 'ISKCON', kind: 'Spirituality and community', stats: [['200K', 'new Instagram followers in 8 months'], ['3x', 'share of voice'], ['+25%', 'donation fund']] },
+      { id: 'rioga-premium', name: 'Rioga Premium', kind: 'Real estate consultancy', stats: [['200+', 'leads in 2 months for most launches'], ['+40%', 'website traffic'], ['+50%', 'better site score']] }
+    ],
+    steps: [
+      { t: 'Social audit', d: 'We review your profiles, content and competitors, and find what your audience responds to.' },
+      { t: 'Strategy and calendar', d: 'Content themes, formats and a posting plan, agreed with you before anything goes live.' },
+      { t: 'Create and publish', d: 'We make, schedule and post the content, and manage comments and messages.' },
+      { t: 'Monthly report', d: 'Followers, reach, engagement, enquiries from social and what we’ll try next.' }
+    ],
+    faq: [
+      { q: 'How much does social media marketing cost?', a: 'Our plans start from ₹30,000 a month. The price depends on how many platforms and posts you need, and whether it includes video, influencers or paid ads.' },
+      { q: 'Which platforms should my brand be on?', a: 'Usually Instagram for consumer brands and LinkedIn for B2B. It’s better to do one or two platforms well than five badly. We’ll recommend based on where your buyers are.' },
+      { q: 'Do you shoot photos and videos?', a: 'We plan, script and edit content. For shoots, we either work with what your team records on a phone or arrange a shoot, depending on the budget.' },
+      { q: 'How fast can followers grow?', a: 'It varies by brand and budget. ISKCON gained 200,000 Instagram followers in eight months with a content strategy and creator collaborations.' }
+    ]
+  },
+  {
+    slug: 'email-marketing-agency-india',
+    serviceType: 'Email marketing',
+    guide: { href: '/blog/d2c-email-flows/', label: 'Guide: email flows every D2C brand needs' },
+    nav: 'Email marketing',
+    title: 'Email Marketing Agency in India — Flows & Automation',
+    description: 'Welcome, abandoned-cart, post-purchase and nurture email flows that turn visitors into repeat customers. Email open rates up 25% for InterFace.',
+    eyebrow: 'Email marketing · Automation · Funnels · CRO',
+    h1: 'The email list you have <em>is worth more than you think.</em>',
+    lead: 'Email is the one channel you own, with no ad costs per message. We set up automated flows that welcome, remind and bring customers back, so more of your existing traffic turns into sales.',
+    whatsapp: "Hi Digital Dobby, I'd like help with email marketing.",
+    pains: [
+      'Shoppers who add to cart and leave, with nothing to bring them back',
+      'A list of subscribers you only email when there’s a sale',
+      'Emails landing in spam or not being opened',
+      'B2B leads that go cold before sales gets to them'
+    ],
+    services: [
+      { t: 'Automated flows', d: 'Welcome, abandoned cart, browse abandonment, post-purchase and win-back emails that run on their own.' },
+      { t: 'Lead nurturing', d: 'For B2B and real estate: email sequences that keep leads warm until they’re ready to talk.' },
+      { t: 'Campaigns and newsletters', d: 'Regular emails with useful content and offers, written and designed to be opened.' },
+      { t: 'Deliverability', d: 'Domain setup (SPF, DKIM, DMARC), list cleaning and sending habits that keep you out of spam.' },
+      { t: 'Landing pages and CRO', d: 'Sign-up forms, landing pages and checkout fixes that turn more visitors into subscribers and buyers.' }
+    ],
+    proof: [
+      { id: 'interface', name: 'InterFace', kind: 'Real-estate SaaS', stats: [['+25%', 'email open rates'], ['+40%', 'ad conversions'], ['+30%', 'website engagement and lead capture']] },
+      { id: 'jollywell', name: 'Jollywell', kind: 'Wellness D2C', stats: [['+45%', 'organic traffic'], ['+25%', 'ad conversion rates'], ['−25%', 'bounce rate']] }
+    ],
+    steps: [
+      { t: 'Email audit', d: 'We check your list, platform, existing flows and deliverability, and find the quickest wins.' },
+      { t: 'Core flows first', d: 'Welcome and abandoned-cart or nurture flows go live first, because they pay back fastest.' },
+      { t: 'Campaigns and tests', d: 'Regular campaigns with subject-line and content tests to lift opens and clicks.' },
+      { t: 'Monthly report', d: 'Revenue or leads from email, open and click rates, and what we’re improving next.' }
+    ],
+    faq: [
+      { q: 'How much does email marketing cost?', a: 'Our plans start from ₹30,000 a month, often combined with ads or SEO. Your email platform (such as Klaviyo, Mailchimp or Zoho Campaigns) is billed separately.' },
+      { q: 'Which email platform should I use?', a: 'For Shopify stores, usually Klaviyo or Shopify Email. For B2B, Zoho Campaigns, Mailchimp or your CRM’s email tool. We work with what you have or help you choose.' },
+      { q: 'I only have a small list. Is email worth it?', a: 'Yes. Automated flows work from the first subscriber, and we also set up sign-up forms and offers to grow the list.' },
+      { q: 'Will you write and design the emails?', a: 'Yes. We write the copy, design the emails to match your brand and set up the automation.' }
+    ]
   }
 ];
 
@@ -192,7 +364,7 @@ const page = n => {
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'Service', name: strip(n.h1), serviceType: n.nav + ' digital marketing', description: n.description, url,
+      { '@type': 'Service', name: strip(n.h1), serviceType: n.serviceType || n.nav + ' digital marketing', description: n.description, url,
         areaServed: { '@type': 'Country', name: 'India' }, provider: { '@id': `${BASE}/#organization` } },
       { '@type': 'FAQPage', mainEntity: n.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
       { '@type': 'BreadcrumbList', itemListElement: [

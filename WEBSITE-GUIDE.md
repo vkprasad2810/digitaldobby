@@ -111,6 +111,6 @@ These pages are built by small scripts, so edit the source and rebuild instead o
 | Pages | Edit | Then run |
 |---|---|---|
 | `case-studies/<name>/` (one page per case study) | The `CASES` list in `js/deck.js` | `node setup/build-case-pages.mjs` |
-| `real-estate-digital-marketing/`, `shopify-seo-agency/`, `d2c-marketing-agency/` | The `NICHES` list at the top of `setup/build-niche-pages.mjs` | `node setup/build-niche-pages.mjs` |
+| `real-estate-digital-marketing/`, `shopify-seo-agency/`, `d2c-marketing-agency/`, plus the service pages `seo-services-mumbai/`, `performance-marketing-agency-mumbai/`, `social-media-marketing-agency-mumbai/`, `email-marketing-agency-india/` | The `NICHES` list at the top of `setup/build-niche-pages.mjs` | `node setup/build-niche-pages.mjs` |
 
 After adding a new page, add its address to `sitemap.xml`, push, then use **URL inspection → Request indexing** in Search Console.
