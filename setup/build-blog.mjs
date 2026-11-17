@@ -8,6 +8,127 @@ const BASE = 'https://digitaldobby.com';
 
 const POSTS = [
   {
+    slug: 'd2c-email-flows',
+    title: '5 Email Flows Every D2C Brand Should Set Up First',
+    seoTitle: '5 Email Flows Every D2C Brand Should Set Up First',
+    description: 'The five automated emails that earn D2C brands repeat sales: welcome, abandoned cart, post-purchase, replenishment and win-back, with what to put in each.',
+    date: '2026-11-17',
+    minutes: 6,
+    tag: 'D2C & wellness',
+    related: { href: '/d2c-marketing-agency/', label: 'D2C marketing services' },
+    body: `
+<p>Most D2C brands spend almost all their marketing budget finding new customers, then do very little to bring them back. Automated email flows fix that. You set them up once, and they keep earning while you focus on everything else.</p>
+<p>Start with these five, in this order. Each one works on Shopify Email, Klaviyo or most other email tools.</p>
+
+<h2>1. Welcome flow</h2>
+<p><strong>When it starts:</strong> someone joins your list, usually through a pop-up or at checkout.</p>
+<p><strong>What to send (3 emails over about a week):</strong></p>
+<ol>
+  <li>Thank them, deliver any promised discount, and say what makes your brand different.</li>
+  <li>Tell your story: why you started, how products are made, what’s in them.</li>
+  <li>Show your best sellers with real reviews, and remind them the discount is waiting.</li>
+</ol>
+<p>Welcome emails are usually the most-read emails a brand sends, because people have just asked to hear from you.</p>
+
+<h2>2. Abandoned cart flow</h2>
+<p><strong>When it starts:</strong> someone adds to cart or starts checkout but doesn’t finish.</p>
+<p><strong>What to send (2–3 emails):</strong></p>
+<ol>
+  <li>A friendly reminder within a few hours, with the product image and a button back to the cart.</li>
+  <li>Next day: answer the likely objection (delivery time, returns, cash on delivery, how to use the product).</li>
+  <li>Optional, two days later: a small incentive, such as free shipping. Don’t make discounts automatic, or customers learn to wait for them.</li>
+</ol>
+
+<h2>3. Post-purchase flow</h2>
+<p><strong>When it starts:</strong> the first order.</p>
+<p><strong>What to send:</strong></p>
+<ul>
+  <li>A thank-you with what happens next and delivery tracking.</li>
+  <li>When it arrives: how to use the product to get the most from it. This cuts returns and complaints, especially for supplements and skincare.</li>
+  <li>A week or two later: ask for a review. Reviews feed your website, ads and SEO.</li>
+</ul>
+
+<h2>4. Replenishment flow</h2>
+<p><strong>When it starts:</strong> a set time after purchase, based on how long the product lasts.</p>
+<p>If a tub of protein lasts 30 days, remind the customer around day 25: “Running low? Reorder in one click.” Add a subscribe-and-save option if you offer one. For consumables like supplements, food and personal care, this is often the flow that earns the most repeat revenue.</p>
+
+<h2>5. Win-back flow</h2>
+<p><strong>When it starts:</strong> a customer hasn’t ordered for a while (for example, 60–90 days for consumables).</p>
+<p><strong>What to send (2–3 emails):</strong> what’s new since they last ordered, a reason to come back (a new flavour, a bundle, an offer), and finally a polite “should we stop emailing?” Removing people who don’t open keeps your emails landing in inboxes, not spam.</p>
+
+<h2>Getting the basics right</h2>
+<ul>
+  <li><strong>Consent:</strong> only email people who signed up or bought from you, and include a clear unsubscribe link in every email.</li>
+  <li><strong>Send from your own domain</strong> (for example hello@yourbrand.com), with SPF and DKIM set up, so your emails don’t land in spam.</li>
+  <li><strong>Keep it mobile-first:</strong> most people read on their phones, so use short emails, one main button and big images.</li>
+  <li><strong>Add WhatsApp carefully:</strong> order updates and replies work well there. Promotional messages need opt-in.</li>
+</ul>
+
+<h2>What this looks like in practice</h2>
+<p>For <a href="/case-studies/jollywell/">Jollywell</a>, a plant-based supplement brand, automated re-engagement emails were part of a wider plan with SEO and A/B-tested ads. Engagement from email rose 20%, alongside 45% more organic traffic. For <a href="/case-studies/interface/">InterFace</a>, targeted email workflows lifted open rates by 25%.</p>
+
+<h2>Want these set up for your store?</h2>
+<p>We’ll review your current emails and flows for free and show you which of these five would earn the most for your brand first. <a href="/#contact">Ask for a free audit</a>, or see our <a href="/d2c-marketing-agency/">D2C marketing services</a>.</p>
+`
+  },
+  {
+    slug: 'real-estate-lead-generation-india',
+    title: 'Real Estate Lead Generation: 9 Channels That Work for Indian Developers',
+    seoTitle: 'Real Estate Lead Generation in India: 9 Channels',
+    description: 'Nine lead generation channels for Indian real-estate developers and brokers, from Google and Meta ads to portals, WhatsApp and channel partners.',
+    date: '2026-11-17',
+    minutes: 7,
+    tag: 'Real estate',
+    related: { href: '/real-estate-digital-marketing/', label: 'Real estate marketing services' },
+    body: `
+<p>Real-estate leads in India come from many places, and each channel brings a different kind of buyer at a different cost. The developers who sell fastest don’t pick one channel. They combine a few and make sure every lead gets a fast reply.</p>
+<p>Here are nine channels that work, what each is good for, and how to use it well.</p>
+
+<h2>1. Google Search ads</h2>
+<p><strong>Best for:</strong> buyers actively searching right now (“2 BHK in Thane West”, “new launch in Kharghar”).</p>
+<p>Search intent is strong, so leads tend to be more serious, though each click can cost more. Use tightly grouped keywords per micro-market and configuration, and send people to a project landing page, not your homepage.</p>
+
+<h2>2. Meta lead ads (Facebook and Instagram)</h2>
+<p><strong>Best for:</strong> reaching buyers early, before they start searching, at a lower cost per lead.</p>
+<p>Meta’s instant forms are easy to fill, which also means more casual leads. Add one or two qualifying questions (budget, timeline) and follow up within minutes.</p>
+
+<h2>3. Video tours on YouTube and Instagram Reels</h2>
+<p><strong>Best for:</strong> building desire and trust, especially for NRI and out-of-town buyers.</p>
+<p>Walkthroughs of the sample flat, amenities and neighbourhood do more than brochures. Use them in ads and retarget people who watched most of the video.</p>
+
+<h2>4. Property portals</h2>
+<p><strong>Best for:</strong> volume. 99acres, MagicBricks and Housing.com are where many buyers compare options.</p>
+<p>The catch: the same buyer often enquires with several developers at once. Portals work best alongside your own campaigns, not as your only source.</p>
+
+<h2>5. A fast project landing page and SEO</h2>
+<p><strong>Best for:</strong> turning paid traffic into enquiries, and earning free traffic over time.</p>
+<p>One mobile-first page per project with configurations, price cues, location advantages, amenities, RERA details and one clear enquiry form or WhatsApp button. For <a href="/case-studies/rioga-premium/">Rioga Premium</a>, faster landing pages improved the site score by 50% and helped deliver 200+ leads in two months for most residential launches.</p>
+
+<h2>6. WhatsApp</h2>
+<p><strong>Best for:</strong> fast replies and conversations Indian buyers actually prefer.</p>
+<p>Add a click-to-WhatsApp button to ads and pages, and send an instant reply with the brochure and a link to book a site visit. Use WhatsApp for people who contacted you, not cold messages.</p>
+
+<h2>7. Retargeting</h2>
+<p><strong>Best for:</strong> bringing back people who visited the page or watched a video but didn’t enquire.</p>
+<p>Show them something new each time: the floor plan, a resident testimonial, a site-visit weekend, payment plan details.</p>
+
+<h2>8. Channel partners and brokers</h2>
+<p><strong>Best for:</strong> reach into local buyer networks, especially for larger launches.</p>
+<p>Give partners ready-made creatives and a simple way to register leads, so your digital campaigns and partner leads don’t compete with each other.</p>
+
+<h2>9. Your own database</h2>
+<p><strong>Best for:</strong> the cheapest leads you’ll get: past enquiries, site visitors and existing customers.</p>
+<p>Announce new launches to people who enquired before (with their consent), and run referral offers for existing customers. These leads already know your brand.</p>
+
+<h2>Don’t forget RERA</h2>
+<p>Every ad must carry the project’s RERA registration details. In Maharashtra, MahaRERA has required the registration number and a QR code linking to the project’s MahaRERA page on all project ads since August 2023, across print, digital and social media, and asked for them to be shown prominently in April 2025. It has fined hundreds of projects for missing them. Check your state authority’s current rules before launch.</p>
+
+<h2>Which channels should you start with?</h2>
+<p>For most launches: Google Search plus Meta lead ads, a fast landing page and instant WhatsApp replies. Add portals for volume and retargeting once traffic builds. Measure every channel by <strong>site visits and bookings</strong>, not just lead count.</p>
+<p>Want to know what this would cost for your project? Read <a href="/blog/real-estate-digital-marketing-cost-india/">how much real-estate digital marketing costs in India</a>, or <a href="/#contact">ask us for a free audit</a> of your current campaigns. See our <a href="/real-estate-digital-marketing/">real estate marketing services</a>.</p>
+`
+  },
+  {
     slug: 'how-to-choose-digital-marketing-agency-india',
     title: 'How to Choose a Digital Marketing Agency in India: 12 Questions to Ask',
     seoTitle: 'How to Choose a Digital Marketing Agency in India',
