@@ -90,6 +90,7 @@ const NICHES = [
   },
   {
     slug: 'd2c-marketing-agency',
+    guide: { href: '/blog/supplement-marketing-india-fssai-asci/', label: 'Guide: supplement marketing within FSSAI and ASCI rules' },
     nav: 'D2C brands',
     title: 'D2C Marketing Agency for Wellness Brands — Digital Dobby',
     description: 'SEO, A/B-tested Meta and Google ads, email and social for Indian D2C brands. +45% organic traffic for Jollywell, a wellness brand.',

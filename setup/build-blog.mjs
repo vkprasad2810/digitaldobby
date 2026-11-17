@@ -8,6 +8,138 @@ const BASE = 'https://digitaldobby.com';
 
 const POSTS = [
   {
+    slug: 'how-to-choose-digital-marketing-agency-india',
+    title: 'How to Choose a Digital Marketing Agency in India: 12 Questions to Ask',
+    seoTitle: 'How to Choose a Digital Marketing Agency in India',
+    description: 'The 12 questions to ask before hiring a digital marketing agency in India, the answers to look for, and the red flags that mean walk away.',
+    date: '2026-11-17',
+    minutes: 6,
+    tag: 'Hiring an agency',
+    related: { href: '/#services', label: 'Our services' },
+    body: `
+<p>Hiring the wrong marketing agency costs more than its fee. You lose months of ad spend, momentum and sometimes your ad accounts. The right one becomes an extension of your team.</p>
+<p>Whether you talk to us or anyone else, these are the questions to ask, what a good answer sounds like, and when to walk away.</p>
+
+<h2>About results</h2>
+
+<h3>1. Can you show results for a business like mine?</h3>
+<p>Ask for case studies in your industry or with a similar problem, with real numbers and a named client. “We grew traffic” isn’t a result. “Organic traffic up 45% over eight months for a Shopify jewellery store” is.</p>
+
+<h3>2. Which numbers will you report on, and how often?</h3>
+<p>Good agencies agree on a few business numbers up front (leads, cost per lead, sales, revenue from search) and report them monthly in plain language. Be wary of reports full of impressions and reach with nothing about leads or sales.</p>
+
+<h3>3. Do you guarantee results?</h3>
+<p><strong>The right answer is no.</strong> Marketing depends on your product, price, market and sales follow-up. An agency can commit to the work, targets and honest reporting, but anyone who guarantees “500 leads” or “page one in 30 days” is overselling.</p>
+
+<h2>About how they work</h2>
+
+<h3>4. What will you do in the first 30 days?</h3>
+<p>Expect an audit, tracking fixes, quick wins and a plan, not “we’ll start posting”. If they can’t describe the first month clearly, they probably don’t have a process.</p>
+
+<h3>5. Who will actually work on my account?</h3>
+<p>In some agencies, senior people pitch and juniors deliver. Ask who you’ll talk to every week and how much experience they have.</p>
+
+<h3>6. How do ads, SEO and social connect in your plan?</h3>
+<p>Channels work better together. Your ads, website, search and social should point to the same goal. If each channel is a separate line item with no link between them, results usually suffer.</p>
+
+<h3>7. How fast do you reply, and how?</h3>
+<p>Agree on response times and a channel (WhatsApp group, email, weekly call). It matters most during a launch or a sale.</p>
+
+<h2>About money and ownership</h2>
+
+<h3>8. What exactly is included in the fee?</h3>
+<p>Get the scope in writing: channels, number of creatives and posts, landing pages, reports and calls. Check what costs extra.</p>
+
+<h3>9. Is ad spend separate, and who pays the platforms?</h3>
+<p>Ad spend should be separate from the fee, and ideally you pay Google and Meta directly. That way you see exactly what was spent, and nobody adds a hidden margin.</p>
+
+<h3>10. Who owns the ad accounts, data and creatives?</h3>
+<p><strong>You should.</strong> Ad accounts, Google Analytics, Search Console, your website and the creatives you paid for should be in your name, with the agency added as a user. If you part ways, you keep everything.</p>
+
+<h3>11. What’s the minimum term and notice period?</h3>
+<p>Three months is a fair minimum, because most channels need time to learn and improve. Avoid long lock-ins with no exit if results don’t come.</p>
+
+<h3>12. Can I speak to a current client?</h3>
+<p>A confident agency will connect you with a client or point you to public reviews and recommendations.</p>
+
+<h2>Red flags: when to walk away</h2>
+<ul>
+  <li>Guaranteed rankings, followers or leads</li>
+  <li>They want to own or keep your ad accounts</li>
+  <li>No case studies with real numbers</li>
+  <li>Reports with lots of charts but no leads, sales or cost per result</li>
+  <li>A long contract with no clear scope</li>
+  <li>“Buy followers” or fake reviews of any kind</li>
+</ul>
+
+<h2>Try us on these questions</h2>
+<p>Ask us any of these. Our plans start from ₹30,000 a month, ad spend is paid directly by you, you own every account, and our <a href="/case-studies.html">case studies</a> show real numbers from real clients. The easiest way to judge us is a <a href="/#contact">free audit</a> of your current marketing.</p>
+`
+  },
+  {
+    slug: 'supplement-marketing-india-fssai-asci',
+    title: 'Marketing a Supplement Brand in India Without Breaking FSSAI and ASCI Rules',
+    seoTitle: 'Supplement Marketing in India: FSSAI and ASCI Rules',
+    description: 'How Indian supplement and wellness brands can run ads, influencers and SEO within FSSAI, ASCI and ad platform rules, without weakening their marketing.',
+    date: '2026-11-17',
+    minutes: 7,
+    tag: 'D2C & wellness',
+    related: { href: '/d2c-marketing-agency/', label: 'D2C marketing services' },
+    body: `
+<p>Supplement and wellness brands are among the fastest-growing D2C categories in India, and among the most likely to have ads rejected, influencer posts flagged or claims challenged. The rules aren’t there to stop you marketing. They stop you promising what the product can’t prove.</p>
+<p>This guide covers the main rules in plain language and how to market well within them. It isn’t legal advice: for specific claims, check with a food regulatory consultant or lawyer.</p>
+
+<h2>1. FSSAI: what you can claim</h2>
+<p>Health supplements and nutraceuticals in India fall under FSSAI. Their advertising follows the <strong>Food Safety and Standards (Advertising and Claims) Regulations, 2018</strong>, and the 2022 health supplement regulations work with them for all claims. In practice:</p>
+<ul>
+  <li><strong>No disease claims.</strong> A supplement can’t claim to prevent, treat or cure a disease. “Supports healthy digestion” is a different kind of statement from “cures acidity”.</li>
+  <li><strong>Claims must be backed.</strong> Nutrition and health claims need scientific support. Claims outside the permitted lists need prior approval from FSSAI.</li>
+  <li><strong>No misleading words.</strong> Words like “natural”, “pure” or “fresh” in a brand or product name come with labelling rules, including a disclaimer.</li>
+</ul>
+<p>FSSAI actively monitors ads: its Advertising Monitoring Committee has reported many cases of misleading claims. Read the regulations on <a href="https://fssai.gov.in/" rel="noopener">fssai.gov.in</a>.</p>
+<p>Separately, the <strong>Drugs and Magic Remedies (Objectionable Advertisements) Act</strong> prohibits ads that claim to treat certain listed diseases and conditions. Another reason to keep disease language out of your marketing.</p>
+
+<h2>2. ASCI: honest ads and influencers</h2>
+<p>The Advertising Standards Council of India (ASCI) code applies to all ads, including social media. Two parts matter most for supplement brands:</p>
+<ul>
+  <li><strong>Disclosure.</strong> Paid influencer posts must carry a clear label such as “#ad” or “Collaboration” that people notice, not buried among hashtags.</li>
+  <li><strong>Qualified voices for technical health claims.</strong> Since ASCI’s April 2025 update, influencers only need to be qualified (doctor, nutritionist, dietitian and similar) and state that qualification when they give technical health or nutrition advice, such as prevention, treatment or cure claims. General content about healthy habits doesn’t need it.</li>
+</ul>
+<p>Brands are responsible too: ASCI expects you to make sure the influencers you hire follow the guidelines. See the <a href="https://www.ascionline.in/" rel="noopener">ASCI website</a> for the current code.</p>
+
+<h2>3. Meta and Google ad policies</h2>
+<p>Ad platforms add their own rules on top of the law. Expect closer review for supplements, especially weight loss and “hormonal” products:</p>
+<ul>
+  <li>Avoid before-and-after images and anything that makes people feel bad about their bodies.</li>
+  <li>Don’t imply you know someone’s condition (“Struggling with PCOS?” addressed to the viewer).</li>
+  <li>Keep landing page claims consistent with the ad, since platforms review both.</li>
+</ul>
+
+<h2>How to market well within the rules</h2>
+<p>Compliant marketing doesn’t have to be weak marketing. What works:</p>
+<ol>
+  <li><strong>Sell the routine, not the cure.</strong> Talk about the habit and the experience: taste, convenience, ingredients, how it fits a morning.</li>
+  <li><strong>Lead with transparency.</strong> Ingredients, sourcing, lab testing and certifications build trust with today’s careful buyers.</li>
+  <li><strong>Use real customer stories carefully.</strong> Reviews about taste, routine and service are safe. Remove reviews that make medical claims.</li>
+  <li><strong>Win on SEO and content.</strong> Helpful guides (“how to read a supplement label”, “protein needs for vegetarians”) bring in shoppers searching for answers, without paid-ad review issues.</li>
+  <li><strong>Build retention.</strong> Subscriptions, reminder emails and bundles grow revenue from customers you already have.</li>
+</ol>
+<p>That’s the approach we took with <a href="/case-studies/jollywell/">Jollywell</a>, a plant-based supplement brand: SEO and content, continuously A/B-tested ads and re-engagement emails, for 45% more organic traffic and 25% better ad conversion rates.</p>
+
+<h2>A quick pre-publish checklist</h2>
+<ul>
+  <li>Does any line suggest the product prevents, treats or cures a disease?</li>
+  <li>Can you back every health or nutrition claim?</li>
+  <li>Is every paid influencer post clearly labelled?</li>
+  <li>Does any influencer give technical health advice without stating a relevant qualification?</li>
+  <li>Do the ad and the landing page say the same thing?</li>
+</ul>
+
+<h2>Need a second pair of eyes?</h2>
+<p>We’ll review your current ads and product pages for free and point out claims likely to get rejected, plus what to say instead. <a href="/#contact">Ask for a free audit</a>, or see our <a href="/d2c-marketing-agency/">D2C marketing services</a>.</p>
+`
+  },
+  {
     slug: 'shopify-seo-checklist-india',
     title: 'Shopify SEO Checklist for Indian Stores (2026)',
     description: 'A practical Shopify SEO checklist for Indian stores: duplicate URLs, collection pages, product titles, speed, images and Search Console.',
@@ -160,6 +292,7 @@ const STYLE = `
     .bp-meta { color: var(--muted); font-size: 15px; margin-bottom: 36px; }
     .bp-body { font-size: 18px; line-height: 1.7; color: var(--ink-2); }
     .bp-body h2 { font-size: clamp(24px, 3vw, 30px); letter-spacing: -.02em; color: var(--ink); margin: 44px 0 12px; line-height: 1.2; }
+    .bp-body h3 { font-size: 20px; color: var(--ink); margin: 28px 0 8px; line-height: 1.3; }
     .bp-body p { margin: 0 0 18px; }
     .bp-body ul, .bp-body ol { margin: 0 0 18px; padding-left: 1.3em; display: grid; gap: 8px; }
     .bp-body a { color: var(--accent-ink); }
